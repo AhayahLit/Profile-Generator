@@ -1,0 +1,26 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "jest --verbose test/Employee.test.js" 
+  },
+  "scripts": {
+    "test": "jest --verbose test/Employee.test.js"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhayahLit/Profile-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhayahLit/Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/AhayahLit/Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0",
+    "jest": "^28.1.1"
+  }
+}
