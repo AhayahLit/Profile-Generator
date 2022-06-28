@@ -2,19 +2,23 @@ const Intern = require("../lib/Intern");
 
 describe("Engineer", () => {
     test("Getting the Correct Name", () => {
-        var example1= new Intern("John", 1211, "Asdfqwerty@gmail.com");
-         expect(example1.getName()) .toBe("John")
+        var example2= new Intern("John", 1211, "school", "Asdfqwerty@gmail.com");
+         expect(example2.getName()) .toBe("John")
     })
     test("Getting the Correct Id", () => {
-        var example1= new Intern("John", 1211, "Asdfqwerty@gmail.com");
-         expect(example1.getId()) .toBe(1211)
+        var example2= new Intern("John", 1211, "school", "Asdfqwerty@gmail.com");
+         expect(example2.getId()) .toBe(1211)
+    })
+    test("School", () =>  {
+        var example2= new Intern("John", 1211, "school", "Asdfqwerty@gmail.com");
+        expect(example2.getSchool()) .tobe("School")
     })
     test("Getting the Correct Email", () => {
-        var example1= new Intern("John", 1211, "Asdfqwerty@gmail.com");
-         expect(example1.getEmail()) .toBe("Asdfqwerty@gmail.com")
+        var example2= new Intern("John", 1211, "school", "Asdfqwerty@gmail.com");
+         expect(example2.getEmail()) .toBe("Asdfqwerty@gmail.com")
     })
-    test("Getting the Correct Email", () => {
-        var example1= new Intern("John", 1211, "Asdfqwerty@gmail.com");
-         expect(example1.getRole()) .toBe("Employee")
+    test("Are they a Intern", () => {
+        var example2= new Intern("John", 1211, "school", "Asdfqwerty@gmail.com");
+         expect(example2.getRole()) .toBe("Intern")
 } ) 
 })

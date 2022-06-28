@@ -1,20 +1,24 @@
-const Engineer = require("../lib/Engineer");
+const Manager = require("../lib/Manager");
 
-describe("Employee", () => {
+describe("Manager", () => {
     test("Getting the Correct Name", () => {
-        var example1= new Employee("Eric", 1211, "Lau1087054@gmail.com");
-         expect(example1.getName()) .toBe("Eric")
+        var example4= new Manager("John", 1211, "1-800-000-0000", "Asdfqwerty@gmail.com");
+         expect(example4.getName()) .toBe("John")
     })
     test("Getting the Correct Id", () => {
-        var example1= new Employee("Eric", 1211, "Lau1087054@gmail.com");
-         expect(example1.getId()) .toBe(1211)
+        var example4= new Manager("John", 1211, "1-800-000-0000", "Asdfqwerty@gmail.com");
+         expect(example4.getId()) .toBe(1211)
+    })
+    test("Manager Number", () => {
+        var example4= new Manager("John", 1211, "1-800-000-0000", "Asdfqwerty@gmail.com");
+        expect(example4.getNumber()) .toBe("number")
     })
     test("Getting the Correct Email", () => {
-        var example1= new Employee("Eric", 1211, "Lau1087054@gmail.com");
-         expect(example1.getEmail()) .toBe("Lau1087054@gmail.com")
+        var example4= new Manager("John", 1211, "1-800-000-0000", "Asdfqwerty@gmail.com");
+         expect(example4.getEmail()) .toBe("Asdfqwerty@gmail.com")
     })
-    test("Getting the Correct Email", () => {
-        var example1= new Employee("Eric", 1211, "Lau1087054@gmail.com");
-         expect(example1.getRole()) .toBe("Employee")
+    test("Are they a Employee?", () => {
+        var example1= new Manager("John", 1211, "1-800-000-0000", "Asdfqwerty@gmail.com");
+         expect(example1.getRole()) .toBe("Manager")
 } ) 
 })
